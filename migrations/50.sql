@@ -1,0 +1,11 @@
+
+CREATE TABLE ean_config (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id INTEGER NOT NULL,
+  prefix_ean TEXT NOT NULL DEFAULT '789',
+  cnpj_5 TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE UNIQUE INDEX idx_ean_config_user_id ON ean_config(user_id);

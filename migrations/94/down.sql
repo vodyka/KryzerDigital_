@@ -1,0 +1,6 @@
+
+DROP INDEX idx_marketplace_listings_unique;
+DROP INDEX idx_marketplace_listings_integration;
+DROP INDEX idx_marketplace_listings_listing_id;
+DROP INDEX idx_marketplace_listings_user_company;
+DROP TABLE marketplace_listings;

@@ -1,0 +1,4 @@
+
+DROP INDEX idx_product_dynamic_items_component_sku;
+DROP INDEX idx_product_dynamic_items_dynamic_sku;
+DROP TABLE product_dynamic_items;

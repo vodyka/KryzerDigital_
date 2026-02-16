@@ -1,0 +1,1 @@
+ALTER TABLE accounts_payable DROP COLUMN bank_account;

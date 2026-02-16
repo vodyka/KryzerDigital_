@@ -1,0 +1,5 @@
+
+DROP INDEX idx_transaction_history_created;
+DROP INDEX idx_transaction_history_transaction;
+DROP INDEX idx_transaction_history_company;
+DROP TABLE transaction_history;

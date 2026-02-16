@@ -1,0 +1,4 @@
+
+DROP INDEX idx_integrations_marketplace_external;
+DROP INDEX idx_integrations_marketplace_company;
+DROP TABLE integrations_marketplace;

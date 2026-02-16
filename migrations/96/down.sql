@@ -1,0 +1,5 @@
+
+DROP INDEX idx_product_ml_mappings_company_id;
+DROP INDEX idx_product_ml_mappings_ml_listing_id;
+DROP INDEX idx_product_ml_mappings_product_sku;
+DROP TABLE product_ml_mappings;

@@ -1,0 +1,49 @@
+
+CREATE TABLE accounts_receivable (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id INTEGER NOT NULL,
+  receipt_date DATE NOT NULL,
+  customer_name TEXT NOT NULL,
+  description TEXT,
+  category_id INTEGER,
+  cost_center TEXT,
+  bank_account TEXT,
+  amount REAL NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX idx_accounts_receivable_user_id ON accounts_receivable(user_id);
+CREATE INDEX idx_accounts_receivable_receipt_date ON accounts_receivable(receipt_date);
+CREATE INDEX idx_accounts_receivable_category_id ON accounts_receivable(category_id);
+
+INSERT INTO accounts_receivable (user_id, receipt_date, customer_name, description, category_id, bank_account, amount) VALUES
+(1, '2025-09-17', 'SHPP BRASIL INSTITUICAO DE PAGAMENTO E SERVICOS DE PAGAMENTOS LTDA', 'Receita com vendas', NULL, 'Santander', 678.22),
+(1, '2025-09-17', 'THASSIO OLIVEIRA CINTRA 04691036555', 'Receita com vendas', NULL, 'Santander', 100.00),
+(1, '2025-09-17', 'THASSIO OLIVEIRA CINTRA 04691036555', 'Receita com vendas', NULL, 'Santander', 129.12),
+(1, '2025-09-17', 'SHPP BRASIL INSTITUICAO DE PAGAMENTO E SERVICOS DE PAGAMENTOS LTDA', 'Receita com vendas', NULL, 'Santander', 732.83),
+(1, '2025-09-18', 'SHPP BRASIL INSTITUICAO DE PAGAMENTO E SERVICOS DE PAGAMENTOS LTDA', 'Receita Shopee', NULL, 'Santander', 457.24),
+(1, '2025-09-18', 'SHPP BRASIL INSTITUICAO DE PAGAMENTO E SERVICOS DE PAGAMENTOS LTDA', 'Receita Shopee', NULL, 'Santander', 564.43),
+(1, '2025-09-19', 'SHPP BRASIL INSTITUICAO DE PAGAMENTO E SERVICOS DE PAGAMENTOS LTDA', 'Receita Shopee', NULL, 'Santander', 500.76),
+(1, '2025-09-19', 'SHPP BRASIL INSTITUICAO DE PAGAMENTO E SERVICOS DE PAGAMENTOS LTDA', 'Receita Shopee', NULL, 'Santander', 766.47),
+(1, '2025-09-22', 'SHPP BRASIL INSTITUICAO DE PAGAMENTO E SERVICOS DE PAGAMENTOS LTDA', 'Receita Shopee', NULL, 'Santander', 1656.30),
+(1, '2025-09-22', 'CHIC & SEEK COMERCIO DE VESTUARIO LTDA', 'Receita com vendas', NULL, 'Santander', 4004.00),
+(1, '2025-09-22', 'SHPP BRASIL INSTITUICAO DE PAGAMENTO E SERVICOS DE PAGAMENTOS LTDA', 'Receita Shopee', NULL, 'Santander', 537.40),
+(1, '2025-09-22', 'MOTO CINTRA LTDA', 'Receita com vendas', NULL, 'Santander', 300.00),
+(1, '2025-09-22', 'NXT COMERCIO ELETRONICO LTDA', 'Receita com vendas', NULL, 'Santander', 237.23),
+(1, '2025-09-23', 'SHPP BRASIL INSTITUICAO DE PAGAMENTO E SERVICOS DE PAGAMENTOS LTDA', 'Receita Shopee', NULL, 'Santander', 629.74),
+(1, '2025-09-23', 'SHPP BRASIL INSTITUICAO DE PAGAMENTO E SERVICOS DE PAGAMENTOS LTDA', 'Receita Shopee', NULL, 'Santander', 1881.26),
+(1, '2025-09-23', 'MOTO CINTRA LTDA', 'Receita com vendas', NULL, 'Santander', 270.00),
+(1, '2025-09-24', 'SHPP BRASIL INSTITUICAO DE PAGAMENTO E SERVICOS DE PAGAMENTOS LTDA', 'Receita Shopee', NULL, 'Santander', 498.77),
+(1, '2025-09-24', 'SHPP BRASIL INSTITUICAO DE PAGAMENTO E SERVICOS DE PAGAMENTOS LTDA', 'Receita Shopee', NULL, 'Santander', 484.43),
+(1, '2025-09-25', 'SHPP BRASIL INSTITUICAO DE PAGAMENTO E SERVICOS DE PAGAMENTOS LTDA', 'Receita Shopee', NULL, 'Santander', 761.06),
+(1, '2025-09-25', 'SHPP BRASIL INSTITUICAO DE PAGAMENTO E SERVICOS DE PAGAMENTOS LTDA', 'Receita Shopee', NULL, 'Santander', 744.53),
+(1, '2025-09-26', 'SHPP BRASIL INSTITUICAO DE PAGAMENTO E SERVICOS DE PAGAMENTOS LTDA', 'Receita Shopee', NULL, 'Santander', 668.60),
+(1, '2025-09-26', 'SHPP BRASIL INSTITUICAO DE PAGAMENTO E SERVICOS DE PAGAMENTOS LTDA', 'Receita Shopee', NULL, 'Santander', 650.28),
+(1, '2025-09-28', 'THASSIO OLIVEIRA CINTRA 04691036555', 'Receita com vendas', NULL, 'Santander', 140.00),
+(1, '2025-09-29', 'SHPP BRASIL INSTITUICAO DE PAGAMENTO E SERVICOS DE PAGAMENTOS LTDA', 'Receita Shopee', NULL, 'Santander', 1309.12),
+(1, '2025-09-29', 'SHPP BRASIL INSTITUICAO DE PAGAMENTO E SERVICOS DE PAGAMENTOS LTDA', 'Receita Shopee', NULL, 'Santander', 129.24),
+(1, '2025-09-29', 'MOTO CINTRA LTDA', 'Receita com vendas', NULL, 'Santander', 500.00),
+(1, '2025-09-30', 'SHPP BRASIL INSTITUICAO DE PAGAMENTO E SERVICOS DE PAGAMENTOS LTDA', 'Receita Shopee', NULL, 'Santander', 1814.22),
+(1, '2025-09-30', 'SHPP BRASIL INSTITUICAO DE PAGAMENTO E SERVICOS DE PAGAMENTOS LTDA', 'Receita Shopee', NULL, 'Santander', 657.55),
+(1, '2025-10-01', 'MOTO CINTRA LTDA', 'Receita com vendas', NULL, 'Santander', 1500.00);

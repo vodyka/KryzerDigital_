@@ -1,0 +1,5 @@
+
+DROP INDEX idx_supplier_production_queue_production;
+DROP INDEX idx_supplier_production_queue_sku;
+DROP INDEX idx_supplier_production_queue_supplier;
+DROP TABLE supplier_production_queue;

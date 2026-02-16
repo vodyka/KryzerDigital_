@@ -1,0 +1,4 @@
+
+DROP INDEX idx_integration_connection_tokens_expires;
+DROP INDEX idx_integration_connection_tokens_token;
+DROP TABLE integration_connection_tokens;

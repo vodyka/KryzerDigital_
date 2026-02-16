@@ -1,0 +1,4 @@
+
+DROP INDEX idx_recurring_transactions_active;
+DROP INDEX idx_recurring_transactions_company;
+DROP TABLE recurring_transactions;

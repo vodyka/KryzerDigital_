@@ -1,0 +1,5 @@
+
+DROP INDEX idx_accounts_receivable_category_id;
+DROP INDEX idx_accounts_receivable_receipt_date;
+DROP INDEX idx_accounts_receivable_user_id;
+DROP TABLE accounts_receivable;

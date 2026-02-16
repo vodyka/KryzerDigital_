@@ -1,0 +1,24 @@
+DROP INDEX idx_accounts_receivable_company;
+DROP INDEX idx_accounts_payable_company;
+DROP INDEX idx_bank_accounts_company;
+DROP INDEX idx_categories_company;
+DROP INDEX idx_orders_company;
+DROP INDEX idx_suppliers_company;
+DROP INDEX idx_products_company;
+
+ALTER TABLE supplier_production_queue DROP COLUMN company_id;
+ALTER TABLE spreadsheet_history DROP COLUMN company_id;
+ALTER TABLE ean_config DROP COLUMN company_id;
+ALTER TABLE variation_sizes DROP COLUMN company_id;
+ALTER TABLE variation_colors DROP COLUMN company_id;
+ALTER TABLE product_groups DROP COLUMN company_id;
+ALTER TABLE operational_expenses DROP COLUMN company_id;
+ALTER TABLE activity_logs DROP COLUMN company_id;
+ALTER TABLE spreadsheet_data DROP COLUMN company_id;
+ALTER TABLE accounts_receivable DROP COLUMN company_id;
+ALTER TABLE accounts_payable DROP COLUMN company_id;
+ALTER TABLE bank_accounts DROP COLUMN company_id;
+ALTER TABLE categories DROP COLUMN company_id;
+ALTER TABLE orders DROP COLUMN company_id;
+ALTER TABLE suppliers DROP COLUMN company_id;
+ALTER TABLE products DROP COLUMN company_id;
